@@ -101,49 +101,39 @@
 </section>
 
 
-<!-- Contacto & Newsletter with Map and Info -->
+<!-- Contacto & Newsletter with Map and Enhanced CTA Buttons -->
 <section id="contacto" class="p-10 bg-custom-dark backdrop-blur-md px-6 md:px-20 lg:px-40">
   <h2 class="text-3xl font-bold text-custom-teal mb-8 text-center">Contacto</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
-    <!-- Left Column: Map + CTA Buttons + Social -->
+    <!-- Left Column: Map + Stylish CTA Buttons -->
     <div class="space-y-6">
       <!-- Google Map -->
       <div class="w-full h-64 md:h-80">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6648.203139886014!2d-70.841628!3d-33.576712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662e7969e323b6d%3A0x56d212db875467a2!2sROBOTA!5e0!3m2!1sen!2scl!4v1750957369924!5m2!1sen!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <!-- CTA Buttons -->
-      <div class="flex flex-col space-y-3">
-        <a href="tel:+56997467681" class="inline-block px-4 py-2 bg-custom-teal text-black font-semibold rounded text-center">
-          📞 Call Center: +56 9 9746 7681
+      <!-- Stylish CTA Buttons -->
+      <div class="flex flex-col space-y-4">
+        <a href="tel:+56997467681" class="flex items-center justify-center gap-2 px-6 py-3 bg-custom-teal text-black font-semibold rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+          <i class="fas fa-phone-alt"></i> Call Center: +56 9 9746 7681
         </a>
-        <a href="mailto:contacto@robota.cl" class="inline-block px-4 py-2 bg-custom-teal text-black font-semibold rounded text-center">
-          ✉️ contacto@robota.cl
-        </a>
-      </div>
-
-      <!-- Social Media -->
-      <div class="flex space-x-4 pt-4">
-        <a href="https://www.instagram.com/robotacl/" target="_blank" class="text-custom-teal hover:text-white text-2xl">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/robota-spa" target="_blank" class="text-custom-teal hover:text-white text-2xl">
-          <i class="fab fa-linkedin"></i>
+        <a href="mailto:contacto@robota.cl" class="flex items-center justify-center gap-2 px-6 py-3 bg-custom-teal text-black font-semibold rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+          <i class="fas fa-envelope"></i> contacto@robota.cl
         </a>
       </div>
     </div>
 
     <!-- Right Column: Contact Form -->
-    <form action="https://formsubmit.co/tu-correo@example.com" method="POST" class="space-y-4">
-      <input type="text" name="name" placeholder="Nombre" required class="w-full p-2 rounded text-black">
-      <input type="email" name="email" placeholder="Email" required class="w-full p-2 rounded text-black">
-      <textarea name="message" placeholder="Mensaje" class="w-full p-2 rounded text-black"></textarea>
-      <label class="block">
-        <input type="checkbox" name="newsletter" required>
-        Acepto recibir noticias y promociones.
+    <form action="https://formsubmit.co/tu-correo@example.com" method="POST" class="space-y-4 h-full flex flex-col justify-between">
+      <input type="text" name="name" placeholder="Nombre" required class="w-full p-3 rounded text-black">
+      <input type="email" name="email" placeholder="Email" required class="w-full p-3 rounded text-black">
+      <textarea name="message" placeholder="Mensaje" required class="w-full h-48 p-3 rounded text-black resize-none"></textarea>
+      <label class="block text-sm">
+        <input type="checkbox" name="newsletter" required class="mr-2"> Acepto recibir noticias y promociones.
       </label>
-      <button type="submit" class="px-4 py-2 rounded font-semibold text-black" style="background-color: #41ead4;">
+      <button type="submit" class="mt-2 px-6 py-3 rounded-lg font-semibold text-black bg-custom-teal shadow hover:shadow-lg transition hover:scale-105">
         Enviar
       </button>
     </form>
